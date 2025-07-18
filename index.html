@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Engie Energy Contracts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0066cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0066cc;
+    }
+    .contract {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    .contract button {
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contract button:hover {
+      background: #004999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Engie Energy Contracts</h1>
+    <p>Choose the plan that fits your needs</p>
+  </header>
+
+  <div class="container">
+    <div class="contract">
+      <h2>Fixed Rate Plan</h2>
+      <p>Lock in your energy price for 1 year. No surprises on your bill.</p>
+      <ul>
+        <li>Fixed price for 12 months</li>
+        <li>Green electricity included</li>
+        <li>No cancellation fees</li>
+      </ul>
+      <button>Choose This Plan</button>
+    </div>
+
+    <div class="contract">
+      <h2>Variable Rate Plan</h2>
+      <p>Pay the market price. Enjoy lower costs when prices drop.</p>
+      <ul>
+        <li>Flexible pricing</li>
+        <li>Can change anytime</li>
+        <li>Green electricity optional</li>
+      </ul>
+      <button>Choose This Plan</button>
+    </div>
+
+    <div class="contract">
+      <h2>Green Energy Plan</h2>
+      <p>100% renewable energy to power your home sustainably.</p>
+      <ul>
+        <li>100% green electricity</li>
+        <li>Carbon offset included</li>
+        <li>Support local renewable projects</li>
+      </ul>
+      <button>Choose This Plan</button>
+    </div>
+  </div>
+<script>
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D1q0000004eEQ',
+				'Web_Messaging_Purchase_Assistant',
+				'https://ms-impulse--devb2c.sandbox.my.site.com/ESWWebMessagingPurchase1752838360016',
+				{
+					scrt2URL: 'https://ms-impulse--devb2c.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+<script type='text/javascript' src='https://ms-impulse--devb2c.sandbox.my.site.com/ESWWebMessagingPurchase1752838360016/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</body>
+</html>
